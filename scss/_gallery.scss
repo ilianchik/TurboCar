@@ -1,0 +1,109 @@
+.gallery {
+  background-image: url(../img/gallery/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  margin-bottom: 14rem;
+
+  &__subtitle {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #f6452d;
+    margin-bottom: 1.8rem;
+  }
+
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.8rem;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 4rem;
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 6rem;
+    & .slick-arrow.slick-prev {
+      position: absolute;
+      right: 34.5rem;
+      top: -7.525rem;
+      font-size: 0;
+      background-image: url(../img/gallery/left.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left;
+      width: 5.6rem;
+      height: 3.6rem;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    & .slick-arrow.slick-next {
+      position: absolute;
+      top: -7.525rem;
+      right: 25rem;
+      font-size: 0;
+      background-image: url(../img/gallery/right.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      width: 5.6rem;
+      height: 3.6rem;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2.6rem 6rem;
+      background: #f6452d;
+      transition: all 0.3s;
+    }
+    &:hover,
+    :active {
+      background: transparent;
+      color: #f6452d;
+      box-shadow: inset 0 0 0 2px #f6452d;
+    }
+  }
+  &__box {
+    text-align: center;
+  }
+}
+.slick-list {
+  overflow: hidden;
+  margin: 0 -1rem;
+}
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  margin: 0 1rem;
+}

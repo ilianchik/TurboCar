@@ -1,0 +1,46 @@
+.info {
+  &__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__grid-element {
+    text-align: center;
+    padding: 14rem 0;
+    border-right: 1px solid #e4e4e4;
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__title {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #f6452d;
+    margin-bottom: 1.4rem;
+  }
+
+  &__text {
+    margin-bottom: 0.4rem;
+    display: block;
+    color: #7d7d7d;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  a.info__text:link,
+  a.info__text:visited {
+    color: #7d7d7d;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  a.info__text:hover,
+  a.info__text:active {
+    color: #f6452d;
+  }
+}

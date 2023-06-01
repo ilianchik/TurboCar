@@ -1,0 +1,34 @@
+html {
+  font-size: 50%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 165%;
+  color: $grey_text-color;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 148rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+html.nav-open {
+  overflow-y: hidden;
+}

@@ -1,0 +1,130 @@
+.posts {
+  margin-bottom: 14rem;
+  &__subtitle {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #f6452d;
+    margin-bottom: 1.8rem;
+  }
+
+  &__title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.8rem;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    margin-bottom: 4rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    padding: 4rem 36rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+      background: #f7f7f7;
+    }
+    &:hover .posts__text-bold,
+    &:active .posts__text-bold {
+      color: #f6452d;
+    }
+  }
+
+  &__number-container {
+    margin-right: 4rem;
+  }
+
+  &__number-bold {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #f6452d;
+    margin-bottom: 0.2rem;
+  }
+
+  &__number-normal {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    color: #7d7d7d;
+  }
+
+  &__text-normal {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #ababab;
+    margin-bottom: 0.3rem;
+    margin-top: 0.6rem;
+  }
+
+  &__text-bold {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+  }
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      padding: 2.6rem 6rem;
+      background: #f6452d;
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:active {
+      background: transparent;
+      color: #f6452d;
+      box-shadow: inset 0 0 0 2px #f6452d;
+    }
+  }
+}

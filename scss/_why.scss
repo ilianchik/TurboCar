@@ -1,0 +1,103 @@
+.why {
+  &__top {
+    border-bottom: 2px #e4e4e4 solid;
+    margin-bottom: 14rem;
+  }
+
+  &__top-box {
+    padding-top: 14rem;
+    &:first-child {
+      border-right: 2px #e4e4e4 solid;
+      padding-bottom: 14.3rem;
+    }
+    &:last-child {
+      padding-left: 12.9rem;
+      padding-bottom: 15.1rem;
+    }
+  }
+
+  &__top-subtitle {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #f6452d;
+    margin-bottom: 1.8rem;
+  }
+
+  &__top-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.8rem;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    max-width: 58rem;
+  }
+
+  &__top-text {
+    margin-bottom: 3.8rem;
+  }
+
+  &__top-btn {
+    &:link,
+    &:visited {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2.6rem 6rem;
+      background: #f6452d;
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:active {
+      background: transparent;
+      color: #f6452d;
+      box-shadow: inset 0 0 0 2px #f6452d;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 14rem;
+  }
+
+  &__bottom-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    margin-bottom: 0.6rem;
+    & span {
+      color: #f6452d;
+    }
+  }
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 12.567rem;
+}

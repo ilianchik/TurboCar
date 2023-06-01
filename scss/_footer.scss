@@ -1,0 +1,102 @@
+.footer {
+  background: #f6f6f6;
+  padding-top: 14rem;
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: 48rem auto auto auto auto;
+    margin-bottom: 12.025rem;
+    margin-right: 5.3rem;
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__item-text {
+    width: 34rem;
+    margin-bottom: 2rem;
+  }
+
+  &__item-social {
+    display: flex;
+  }
+
+  &__social-item {
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1f1f1f;
+    margin-bottom: 2.2rem;
+  }
+
+  &__list-item {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__list-link:link,
+  &__list-link:visited {
+    text-decoration: none;
+    color: #7d7d7d;
+    transition: all 0.3s;
+  }
+  &__list-link:hover,
+  &__list-link:active {
+    color: #f6452d;
+    text-decoration: underline;
+  }
+
+  &__bottom-box {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 3.1rem;
+    padding-bottom: 3rem;
+    & .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__left-text {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 165%;
+    text-transform: capitalize;
+    color: #7d7d7d;
+  }
+
+  &__right-text {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 165%;
+    text-transform: capitalize;
+    color: #7d7d7d;
+    & span {
+      font-weight: 700;
+    }
+  }
+}
